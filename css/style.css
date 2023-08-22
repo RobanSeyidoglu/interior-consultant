@@ -1,0 +1,129 @@
+/* Start Variables */
+:root {
+  --main-color: #fff;
+  --padding: 50px;
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #181719;
+  color: #ffffff;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Header */
+header {
+  width: 100%;
+}
+header .container {
+  padding-top: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  text-align: center;
+}
+.container nav i {
+  display: none;
+}
+.container nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container p {
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 10px;
+  border: 1px solid var(--main-color);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  cursor: pointer;
+}
+.container p:hover {
+  background-color: var(--main-color);
+  color: black;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.container nav ul {
+  display: flex;
+  gap: calc(var(--padding) + 20px);
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: var(--main-color);
+  font-weight: 500;
+  font-size: 18px;
+}
+.container nav ul li {
+  padding: 5px 0;
+}
+.container nav ul li .active {
+  border-bottom: 2px solid var(--main-color);
+  padding: 5px 0;
+}
+.container nav ul li:not(:first-child):hover {
+  border-bottom: 2px solid var(--main-color);
+}
+/* End Header */
