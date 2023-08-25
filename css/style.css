@@ -126,4 +126,32 @@ header .container {
 .container nav ul li:not(:first-child):hover {
   border-bottom: 2px solid var(--main-color);
 }
+/* Start Mobile Version  */
+@media (max-width: 760px) {
+  .container nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    height: 90vh;
+    gap: 20%;
+  }
+  .container nav ul {
+    /* display: none; */
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--padding) - 20px);
+    display: none;
+  }
+  .container nav i {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+    margin-top: 15px;
+  }
+  .container p {
+    align-self: flex-start;
+  }
+}
+/* End Mobile Version */
 /* End Header */
