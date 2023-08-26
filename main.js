@@ -23,5 +23,4 @@ if (getComputedStyle(menu).display !== "none") {
     }
   };
 }
-
 // End Header
