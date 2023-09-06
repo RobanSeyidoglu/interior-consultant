@@ -22,5 +22,12 @@ if (getComputedStyle(menu).display !== "none") {
       menu.classList.toggle("fa-bars");
     }
   };
+  ul.onclick = function () {
+    nav.style.height = "0vh";
+    ul.style.display = "none";
+    p.style.display = "flex";
+    menu.classList.toggle("fa-xmark");
+    menu.classList.toggle("fa-bars");
+  };
 }
 // End Header
